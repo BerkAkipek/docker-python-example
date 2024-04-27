@@ -1,8 +1,6 @@
-FROM ubuntu:latest
+FROM python:3.13.0a6-slim
 
 WORKDIR /usr/src/
-
-RUN apt-get update && apt-get install -y python3 python3-pip
 
 RUN useradd --create-home appuser
 
